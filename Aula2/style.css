@@ -1,0 +1,110 @@
+/*seletor
+{
+	propriedade : valor;
+} */
+
+
+p
+{
+	color: white;
+	font-size: 15px;
+	font-family: Helvetica, "Times New Roman";
+	text-shadow:1px 1px 1px #111111;
+}
+
+body
+{
+	background-color: black;
+}
+
+* /*aplica à pagina inteira*/
+{
+	margin: 0;
+	padding: 0;
+	font-family: Helvetica,Arial;
+}
+
+header
+{
+	/*background-color: #35b8b0;*/
+	height: 80px;
+	padding: 20px;
+	/*backgrounimage linear gradient deixa o seletor transparente sem precisar imagem*/
+	background-image: -moz-linear-gradient(#00897b, #64d8cb);/*firefox*/
+	background-image: -webkit-linear-gradient(#00897b, #64d8cb);/*safari, chrome*/
+	background-image: -o-linear-gradient(#00897b, #64d8cb);/*firefox*/
+}
+
+
+footer
+{
+	clear: both; /* se usar o float na div de cima, na div de baixo deve ter o clear*/
+	background-color: #35b8b0;
+	height: 50px;
+	text-align: center;
+	padding: 10px;
+	font-size: 12px;
+	text-shadow:1px 1px 1px #111111;
+}
+
+h1
+{
+	color: #FF7F50;
+	/*no shadow o primeiro é a MARGEM HORIZONTAL(empurra para direita) 
+	 segundo é o VERTICAL(empurra para baixo
+	 terceiro é o BLUR(quanto disperso está)*/
+	text-shadow:1px 1px 1px #111111;
+	text-align: center;
+	margin: 0 0 50px 0;
+
+}
+
+/*declarando id*/
+#principal
+{
+	background-image: url('img/2.jpg');
+	clear: both;
+	background-size: 100%;
+	min-height: 400px; /* no momento que a div cresce, o height vai aumentando*/
+	padding: 80px 0 0 0 ;
+}
+
+#logo/*logo alinhado à esquerda*/
+{
+	float: left;
+}
+
+#menu/*links*/
+{
+	margin-top: 30px;
+	float: right;
+
+}
+
+#menu a/*faz um link com todos os itens que estão no menu*/
+{
+	padding: 52px 20px;/*deu espaçamento entre os links 20 20*/
+	text-decoration: none;/*sublinhado do link*/
+	color: #111;
+	text-shadow: 1px 1px #111111;
+}
+
+#menu a:hover /*sobreposição ao passar no link*/
+{
+	background-color: #111;
+	color:#35b8b0;
+}
+
+/*declarar uma classe*/
+.container
+{
+	width: 960px;
+	margin:0 auto;/*essa confg faz com que o container se ajuste conforme o tamanho da tela*/
+
+}
+
+.efeito /*faz a faixa quase transparente*/
+{
+	background-color: rgba(0, 0, 0, 0.5);
+	padding:80px 0 80px 0;
+}
